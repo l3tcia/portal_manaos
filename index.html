@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manaós</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+
+    <div class="menu-bg" style="height: 120px; display: flex;">
+        <div class="menu_header">
+            <div class="menu" style="margin-top: 10px; margin-right: 30px;">
+                <a href="index.html"><img class="logo_img" src="img/logomao.png" width="150px" height="auto"></a>
+            </div>
+
+
+            <ul class="menu">
+                <li><a href="amazoniaprimitiva.html">Amazônia Primitiva</a>
+                    <ul>
+                        <li><a href="ciclo da borracha.html">Ciclo da Borracha</a></li>
+                        <li><a href="A Cidade Flutuante.html">A Cidade Flutuante</a></li>
+                        <li><a href="teatroamazonas.html">Origem do Teatro Amazonas</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+
+                <li><a href="turismo.html">O que fazer em Manaus?</a></li>
+
+                <li style="width: 50px; height: 25px; margin-left: 70px;" ><a class="img_icon" href="https://www.google.com.br/" target="_blank"><img src="img/facebook.png" width="25" height="25"></a></li>
+                <li style="width: 50px; height: 25px; "><a class="img_icon" href="https://instagram.com/portal.manaos?utm_medium=copy_link" target="_blank"><img src="img/instagram.png" width="25" height="25"></a></li>
+                <li style="width: 50px; height: 25px;"><a class="img_icon" href="https://open.spotify.com/playlist/1Nv7D5ywAOovdQAqy54uQ5?si=db9db38089d14104" target="_blank"><img src="img/spotify.png" width="25" height="25"></a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div style="width: 1100px; margin: auto;">
+        <h1 class="titulo">Manaós</h1>
+    </div>
+
+    <section class="somos" id="somos">
+        <div class="somos-c">
+            <div class="somos-c__texto">
+                    <p class="texto"><span style="color: #8A8635; font-weight: bold">Ma.na.ós (etnol.):</span> Grupo indígena
+                        sul-americano, atualmente considerado extinto, que habitava a região do rio Negro, no estado do
+                        Amazonas.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <center>
+        <div class="w3-content w3-display-container" style="max-width: 1100px; margin-top: 25px;">
+            <img class="mySlides" src="img/card teatro.png" style="width:100%; ">
+            <img class="mySlides" src="img/turismobanner.png" style="width:100%">
+            <img class="mySlides" src="img/ama.png" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+        <center>
+
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-white", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-white";
+                }
+            </script>
+
+
+
+            
+            <section class="somos" id="somos">
+                <div style="width: 1100px; margin: auto;">
+                    <h1 class="titulo">Sobre nós</h1>
+                </div>
+                <div class="somos-c">
+                    <div class="somos-c__texto">
+                            <p class ="texto">
+                                O Portal Manaós foi desenvolvido por Letícia Lima e Raimundo Nathanyel como projeto final do curso de Web Design,
+                                oferecido pelo Senac - Centro de Informática. O site foi criado com o objetivo de preservar e disseminar a cultura da
+                                região Amazônica, devido a escassez de conteúdo histórico e
+                                cultural acerca do tema, visto o apagamento sofrido perante as demais regiões do
+                                Brasil.
+                            </p>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="menu-bg" style="height: 120px; margin-top: 50px; display: flex;">
+                <div class="menu_header" style="margin: auto; width: 1100px;">
+                    <div class="menu" style="margin-top: 10px;">
+                        <a href="index.html"><img class="logo_img" src="img/logomao.png" width="150px" height="auto"></a>
+                    </div>
+
+                    <div style="background-color: #8A8635;">
+                        <h5 style="color: white;">© 2021 Senac - Centro de Informática. Todos os direitos reservados.</h5>
+                    </div>
+                </div>
+            </div>
+                
+</body>
+
+</html>
